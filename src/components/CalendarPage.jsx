@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./HomeScreen.css";
+import "./CalendarPage.css";
 import background from "../assets/XPbackground.jpg";
 import Calendar from 'react-calendar';
 
@@ -15,9 +15,10 @@ const CalendarPage = () => {
                         <button aria-label="Close"></button>
                     </div>
                 </div>
-                <div className="window-body">
-                <Calendar onChange={onChange} value={value} />
-
+                <div className="window-body" style={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems: 'center'}}>
+                    <p>Calendar</p>
+                    <h2>View your progress over time!</h2>
+                    <Calendar onChange={onChange} value={value}/>
                 </div>
             </div>
         </div>

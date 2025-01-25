@@ -45,7 +45,7 @@ html, body {
 
 @font-face {
   font-family: 'CustomFont'; /* Name your font */
-  src: url('./windows-xp-tahoma.ttf') format('truetype');
+  src: url('../assets/windows-xp-tahoma.ttf') format('truetype');
   font-weight: normal; /* Specify weights if applicable */
   font-style: normal; /* Specify style if applicable */
 }
