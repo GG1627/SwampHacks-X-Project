@@ -8,12 +8,11 @@ import { useNavigate } from "react-router-dom";
 const CalendarPage = () => {
     const [value, onChange] = useState(new Date());
     
-    const navigate = useNavigate();
-
     const handleButtonCLick = () => {
         navigate("/");
-      };
+    };
 
+    const navigate = useNavigate();
 
     return (
         <div style={{ backgroundImage: `url(${background})`, height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -25,10 +24,10 @@ const CalendarPage = () => {
                     </div>
                 </div>
                 <div className="window-body" style={{display: 'flex', flexDirection: 'column',justifyContent: 'center', alignItems: 'center'}}>
-                    <p>Calendar</p>
+                    <h1>Calendar</h1>
                     <h2>View your progress over time!</h2>
                     <Calendar onChange={onChange} value={value}/>
-                    <p style={{marginTop: '45px'}}><i>Click the red button to go back to home</i></p>
+                    <p style={{marginTop: '35px', color: 'red'}}><i>click the red x to go back home</i></p>
                 </div>
             </div>
         </div>

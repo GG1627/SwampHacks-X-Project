@@ -17,12 +17,12 @@ p {
 
 h1 {
     font-family: CustomFont;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h2 {
     font-family: CustomFont;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .react-calendar__tile {
@@ -49,7 +49,6 @@ h2 {
     font-size: 25px;
     padding: 5px;
 }
-
 
 @font-face {
     font-family: 'CustomFont';
