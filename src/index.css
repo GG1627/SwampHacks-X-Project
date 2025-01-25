@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f4e2b9;
+}
