@@ -1,12 +1,18 @@
 import React, {useState} from "react";
 import "./HomeScreen.css";
 import myImage from "./heart.png";  
+import { useNavigate } from "react-router-dom";
 
 const HomeScreen = () => {
   const [activeTab, setActiveTab] = useState('tab-A');
+  const navigate = useNavigate();
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
+  };
+
+  const handleButtonCLick = () => {
+    navigate("/calendar");
   };
 
   return (
@@ -49,6 +55,7 @@ const HomeScreen = () => {
             Read more at <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role" target="_blank">MDN Web docs - ARIA: tab role</a>
           </p>
         </article>
+        <button onClick={handleButtonCLick}>Calendar</button>
       </section>
     </div>
     </div>
