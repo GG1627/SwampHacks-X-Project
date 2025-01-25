@@ -7,10 +7,14 @@
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
+  overflow-y: auto; /* Allow vertical scrolling */
+
 }
 
 .HomeScreen_container {
   width: 100vw;
+  overflow-y: auto; /* Allow vertical scrolling */
+
   min-height: 100vh;
   background-color: #f5f5dc;
   color: black;
@@ -39,24 +43,29 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px; /* Adjust padding as needed */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
 }
 
+.title-bar3 {
+  height: 30px;
+}
+
+
+
 @font-face {
-  font-family: 'CustomFont'; /* Name your font */
-  src: url('../assets/windows-xp-tahoma.ttf') format('truetype');
-  font-weight: normal; /* Specify weights if applicable */
-  font-style: normal; /* Specify style if applicable */
+  font-family: 'CustomFont';
+  src: url('../assets/ms-sans-serif-1.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
 }
 
 .window {
   justify-content: space-between;
   align-items: center;
-  font-size: 60px;
+  font-size: 50px;
   width: auto;
   font-family: 'CustomFont', sans-serif;
   background-color: #f5f5dc;
+  margin-bottom: 45px;
 }
 
 .title-bar-text {
@@ -98,13 +107,16 @@ html, body {
   font-size: 40px;
 }
 
-
-.tabs {
-  margin-top: 30px;
-  background-color: #f5f5dc;
+.about{
+  margin-top: 10px;
+  font-family: 'CustomFont';
+  color: black;
+  font-size: 20px;
 }
 
-.tab-menu {
+
+
+.tabs {
   background-color: #f5f5dc;
 }
 
