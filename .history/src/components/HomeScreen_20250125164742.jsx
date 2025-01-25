@@ -41,15 +41,13 @@ const HomeScreen = () => {
               <button aria-label="Close"></button>
             </div>
           </div>
-          <div className="content-container">
-            <img src={myImage} className="heart-image" alt="Heart" />
-            <p className="text-container">
-          
-              <span className="root-text">Root</span><span className="mid-text"> & </span>{" "}
+          <div className="window-body">
+            <img src={myImage} className="heart-image"></img>
+            <p>
+              <span className="root-text">Root</span> &{" "}
               <span className="reach-text">Reach</span>
-          
             </p>
-            <img src={myImage} className="heart-image" alt="Heart" />
+            <img src={myImage} className="heart-image"></img>
           </div>
         </div>
         <section className="tabs" style={{ maxWidth: "500px" }}>
