@@ -42,10 +42,9 @@ const HomeScreen = () => {
           </p>
         </article>
         <article role="tabpanel" id="tab-B" hidden={activeTab !== 'tab-B'}>
-        <p className="text-title">What We Are</p>
-          <p>
-            You create the tabs, you would use a <code>menu role="tablist"</code> element then for the tab titles you use a <code>button</code> with the <code>aria-controls</code> parameter set to match the relative <code>role="tabpanel"</code>'s element.
-          </p>
+        <p className="text-title">Who We Are</p>
+          <p className="about">
+            Alejandro Gonzalez, Gael Garcia, John Lewis, Hector Cruz</p>          
           <p>
             Read more at <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role" target="_blank">MDN Web docs - ARIA: tab role</a>
           </p>
