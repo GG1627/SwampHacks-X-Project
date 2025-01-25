@@ -1,13 +1,60 @@
 .HomeScreen_container {
   width: 100vw;
   height: 100vh;
-  background-color: #e6d4b7;
+  background-color: #f5f5dc;
   color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Add this */
+  flex-direction: column;
 }
 
-.button {
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: rgb(228, 97, 230);
+@font-face {
+  font-family: 'CustomFont'; /* Name your font */
+  src: url('./windows-xp-tahoma.ttf') format('truetype');
+  font-weight: normal; /* Specify weights if applicable */
+  font-style: normal; /* Specify style if applicable */
 }
+
+.window {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 60px;
+  width: auto;
+  font-family: 'CustomFont', sans-serif;
+  background-color: #f5f5dc;
+}
+
+.title-bar-text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.window-body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.heart-image {
+  width: auto;
+  height: 150px;
+}
+
+.root-text{
+  font-family: 'CustomFont';
+  color: #ff623a;
+}
+
+.reach-text{
+  color: #0253a8;
+}
+
+.tabs {
+  margin-top: 30px;
+}
+
+/*.title-bar {
+  background: black !important
+}*/
