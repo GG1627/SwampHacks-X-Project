@@ -11,9 +11,28 @@
 
 }
 
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.text-container span {
+  font-size: 40px;
+}
+
+
 .HomeScreen_container {
   width: 100vw;
   overflow-y: auto; /* Allow vertical scrolling */
+
   min-height: 100vh;
   background-color: #f5f5dc;
   color: black;
@@ -40,13 +59,15 @@ html, body {
   left: 0;
   background-color: #f5f5dc; /* Ensure this matches your desired background color */
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
 }
 
 .title-bar3 {
   height: 30px;
 }
+
+
 
 @font-face {
   font-family: 'CustomFont';
@@ -85,11 +106,18 @@ html, body {
 .root-text{
   font-family: 'CustomFont';
   color: #ff623a;
+
 }
 
 .reach-text{
   font-family: 'CustomFont';
   color: #0253a8;
+
+}
+
+.mid-text{
+  font-family: 'CustomFont';
+  color: black;
 }
 
 .text-title{
@@ -113,11 +141,12 @@ html, body {
 
 
 
+
 .tabs {
   background-color: #f5f5dc;
 }
 
 
 /*.title-bar {
-  background: black !important
+  background: black !important
 }*/

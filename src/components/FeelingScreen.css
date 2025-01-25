@@ -36,6 +36,7 @@
 
 .field-row {
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .pixelated-image {
@@ -44,4 +45,3 @@
     height: 100px;
     margin-top: 50px;
 }
-
