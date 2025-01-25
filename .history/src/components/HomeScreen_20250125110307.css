@@ -1,6 +1,7 @@
 .HomeScreen_container {
   width: 100vw;
   height: 100vh;
+  left: 0;
   background-color: #e6d4b7;
   color: black;
 }
