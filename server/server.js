@@ -41,23 +41,22 @@ app.post("/store-username", async (req, res) => {
   const { name } = req.body;
 
   if (!name) {
+    console.error("No name provided in the request body");
     return res.status(400).json({ message: "Name is required" });
   }
 
   const newUser = new User({ name });
 
   try {
-    // Create a new user and save it to the database
-    await newUser.save();
-    res
-      .status(201)
-      .json({ message: "Username stored successfully", data: newUser });
+    await newUser.save(); // Save the user to the database
+    console.log("User saved successfully:", newUser);
+    res.status(201).json({ message: "Username stored successfully", data: newUser });
   } catch (error) {
-    res
-      .status(500)
-      .json({ message: "Error storing username", error: error.message });
+    console.error("Error saving user to the database:", error);
+    res.status(500).json({ message: "Error storing username", error: error.message });
   }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
