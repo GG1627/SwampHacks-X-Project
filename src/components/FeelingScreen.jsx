@@ -31,6 +31,13 @@ const FeelingScreen = () => {
     }
   }, []);
 
+  useEffect(() => {
+    document.body.className = "FeelingScreen";
+    return () => {
+        document.body.className = "";
+    };
+}, []);
+
   const handleLogout = () => {
     logout({ returnTo: window.location.origin });
     localStorage.removeItem("user");
