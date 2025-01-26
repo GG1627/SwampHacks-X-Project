@@ -134,10 +134,12 @@ const CalendarPage = () => {
                     </menu>
                     <article role="tabpanel" id="mood" hidden={activeTab !== 'mood'}>
                         <h3>Day's Mood</h3>
-                        <img
-                        src={getImageForValue(mood)}
-                        className="pixelated-image HomeScreen_pixelated-image"
-                        ></img>
+                        <div style= {{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                          <img
+                          src={getImageForValue(mood)}
+                          className="pixelated-image HomeScreen_pixelated-image"
+                          ></img>
+                        </div>
                     </article>
                     <article role="tabpanel" id="logbook" hidden={activeTab !== 'logbook'}> 
                         <h3>Logbook</h3>
