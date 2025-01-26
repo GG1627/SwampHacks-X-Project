@@ -47,3 +47,17 @@
     height: 100px;
     margin-top: 50px;
 }
+
+.ResourcesScreen_mid-text {
+    font-size: 25px; /* Smaller font size */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add spacing between links */
+    margin-top: 60px;
+}
+
+.ResourcesScreen_dog_container{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    z-index: 5;
+}

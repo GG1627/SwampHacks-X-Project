@@ -33,9 +33,53 @@ const ResourcesScreen = () => {
               <span className="first-text">Reach</span>
               <span className="mid-text"> Your </span>{" "}
               <span className="reach-text">Community</span>
-            </p>            
+            </p>     
+            <span className="ResourcesScreen_mid-text">
+              UF Counseling & Wellness Center  {"    "}
+              <a
+                href="https://counseling.ufl.edu/outreach/workshops/"
+                target="_blank"
+              >
+               Community Workshops & Events
+              </a>
+            </span>
+            <span className="ResourcesScreen_mid-text">
+              UF Mental Health Screening {"    "}
+              <a
+                href="https://counseling.ufl.edu/services/self/"
+                target="_blank"
+              >
+                Start Your Self-Assessment
+              </a>
+            </span> 
+            
+            <span className="ResourcesScreen_mid-text">
+              UF CWC Groups {"    "}
+              <a
+                href="https://counseling.ufl.edu/services/groups/"
+                target="_blank"
+              >
+                Join a Group
+              </a>
+            </span>     
+            <span className="ResourcesScreen_mid-text">
+              UF AWARE {"    "}
+              <a
+                href="https://counseling.ufl.edu/outreach/aware/"
+                target="_blank"
+              >
+                Ambassadors
+              </a>
+            </span>   
+            <div className="ResourcesScreen_dog_container">
+              <img
+                src="/src/assets/Videos/dogVID4.gif"
+                alt="Dog Animation"
+                width="300"
+              />
+            </div>        
             </div>
-
+      
             </div>
             </div>
   );
