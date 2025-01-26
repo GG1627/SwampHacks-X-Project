@@ -3,12 +3,11 @@
   min-height: 100vh;
   background-color: #f5f5dc;
   color: black;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
   overflow-y: auto; /* Allow vertical scrolling */
-  margin-left: 2%;
 }
 
 .HomeScreen_container {
@@ -22,11 +21,9 @@
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
-.HomeScreen_title-bar2 {
+.title-bar2 {
   width: 100vw;
   height: 50px;
   position: fixed;
@@ -35,32 +32,7 @@
   background-color: #f5f5dc; /* Ensure this matches your desired background color */
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-}
-
-.HomeScreen_content-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.HomeScreen_text-container {
-  margin-top: 50px;
-}
-
-.HomeScreen_pixelated-image {
-  image-rendering: pixelated; /* Ensures pixelation */
-  image-rendering: crisp-edges; /* Fallback for some browsers */
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.HomeScreen_window {
-  min-height: 300px;
-  position: fixed;
 }
 
 .dog_container {
@@ -78,8 +50,8 @@
 }
 
 .speech_bubble_container > img {
-  width: 25vw; /* Keep the width the same */
-  height: 65vh; /* Stretch vertically */
+  width: 450px; /* Keep the width the same */
+  height: 650px; /* Stretch vertically */
 }
 
 /*.title-bar {

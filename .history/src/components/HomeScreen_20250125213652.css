@@ -8,7 +8,6 @@
   display: flex; /* Add this */
   flex-direction: column;
   overflow-y: auto; /* Allow vertical scrolling */
-  margin-left: 2%;
 }
 
 .HomeScreen_container {
@@ -78,8 +77,8 @@
 }
 
 .speech_bubble_container > img {
-  width: 25vw; /* Keep the width the same */
-  height: 65vh; /* Stretch vertically */
+  width: 30vw; /* Keep the width the same */
+  height: 60vh; /* Stretch vertically */
 }
 
 /*.title-bar {

@@ -1,4 +1,4 @@
-.WelcomeScreen_container2 {
+.HomeScreen_container2 {
   width: 100vw;
   min-height: 100vh;
   background-color: #f5f5dc;
@@ -26,7 +26,6 @@
 .text-container span {
   font-size: 40px;
 }
-
 
 .WelcomeScreen_container {
   width: 100vw;
@@ -60,9 +59,8 @@ body {
   left: 0;
   background-color: #f5f5dc; /* Ensure this matches your desired background color */
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px; 
+  align-items: center;
 }
 
 .title-bar3 {
@@ -150,14 +148,9 @@ body {
 
 .speech_bubble_container {
   position: absolute;
-  right: 0;
+  right: 1-%;
   bottom: 30%;
   z-index: 6;
-}
-
-.speech_bubble_container > img {
-  width: 450px; /* Keep the width the same */
-  height: 650px; /* Stretch vertically */
 }
 
 /*.title-bar {

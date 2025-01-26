@@ -9,36 +9,30 @@ import Frown from "./010.png";
 import Cry from "./frame_029.png";
 
 const HomeScreen = () => {
-    const [activeTab, setActiveTab] = useState("tab-A");
-    const navigate = useNavigate();
-  
-    const handleTabClick = (tabId) => {
-      setActiveTab(tabId);
-    };
-  
-    const handleButtonCLick = () => {
-      navigate("/resources");
-    };
-  
-    const handleButtonCLick2 = () => {
-        navigate("/calendar");
-      };
+  const [activeTab, setActiveTab] = useState("tab-A");
+  const navigate = useNavigate();
 
-    const { logout } = useAuth0();
-  
-    return (
-      <div className="HomeScreen_container">
-        <div className="title-bar HomeScreen_title-bar2">
-          <button onClick={handleButtonCLick}>Resources</button>
-          <button onClick={handleButtonCLick2}>Calendar</button>
-          <button onClick={() => logout({ returnTo: `${window.location.origin}` })}>
-            Logout
-          </button>
-          <div className="title-bar-controls">
-          
-          </div>
-        </div>
-        <div className="HomeScreen_container2">
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
+
+  const handleButtonCLick = () => {
+    navigate("/");
+  };
+
+  const handleButtonCLick2 = () => {
+    navigate("/calendar");
+  };
+
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+
+  return (
+    <div className="HomeScreen_container">
+      <div className="title-bar HomeScreen_title-bar2">
+        <button onClick={handleButtonCLick}>Resources</button>
+        <button onClick={handleButtonCLick2}>Calendar</button>
+      </div>
+      <div className="HomeScreen_container2">
         <div className="window HomeScreen_window" style={{ width: "200px" }}>
           <div className="title-bar title-bar3">
             <div className="title-bar-text"></div>
