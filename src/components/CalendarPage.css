@@ -25,11 +25,19 @@ h2 {
     font-size: 30px;
 }
 
+ul {
+    font-size: 20px;
+    margin: 10px;
+}
+
 .react-calendar__tile {
   font-size: 25px;
   height: 70px;
 }
 
+.title-bar {
+    height: 30px;
+}
 
 .react-calendar__navigation {
     display: flex;

@@ -1,0 +1,47 @@
+.HomeScreen_container {
+    width: 100vw;
+    overflow-y: auto; /* Allow vertical scrolling */
+    min-height: 100vh;
+    background-color: #f5f5dc;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Add this */
+    flex-direction: column;
+}
+
+.window-body {
+    display: flex; 
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.root-text {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.root-text2 {
+    color: #ff623a;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-row {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.pixelated-image {
+    image-rendering: pixelated; /* Ensures pixelation */
+    image-rendering: crisp-edges; /* Fallback for some browsers */
+    height: 100px;
+    margin-top: 50px;
+}
