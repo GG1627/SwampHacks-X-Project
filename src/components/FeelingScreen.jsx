@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./FeelingScreen.css";
 import Grin from "./002.png";
 import Smile from "./001.png"; 
@@ -6,11 +7,18 @@ import Mid from "./012.png";
 import Frown from "./010.png"; 
 import Cry from "./frame_029.png"; 
 
-
-
-
 const FeelingScreen = () => {
 
+  const navigate = useNavigate();
+
+    const handleButtonCLick = () => {
+        navigate("/");
+      };
+    
+    const handleButtonCLick2 = () => {
+      navigate("/homescreen");
+    };
+  
   const [sliderValue, setSliderValue] = useState(3);
   
   const getImageForValue = (value) => {
@@ -36,12 +44,10 @@ const FeelingScreen = () => {
             <div className="title-bar title-bar3">
                 <div className="title-bar-text">Feeling Meter</div>
                 <div className="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+                  <button aria-label="Close" onClick={handleButtonCLick}></button>
+
                 </div>
             </div>
-            
             <div className="window-body">
                 <p><span className="root-text">How Are you</span> <span className="root-text2">Feeling</span> <span className="root-text">Today?</span></p>
                 <img src={getImageForValue(sliderValue)} alt="Pixelated Example" className="pixelated-image"></img>
@@ -52,10 +58,10 @@ const FeelingScreen = () => {
                 <label htmlFor="range27">High</label>
                 
             </div>
-                <button>Mark Mood</button>
+                <button onClick={handleButtonCLick2}>Mark Mood</button>
             </div>
             </div>
-    </div>
+            </div>
   );
 };
 
