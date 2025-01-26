@@ -31,7 +31,7 @@ const HomeScreen = () => {
 
       <div className="dog_container">
         <img
-          src="/src/assets/Videos/dogVID3.gif"
+          src="/src/assets/Videos/dogVID2.gif"
           alt="Dog Animation"
           width="300"
         />

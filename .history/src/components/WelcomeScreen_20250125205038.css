@@ -154,7 +154,7 @@ body {
 }
 
 .speech_bubble_container > img {
-  width: 450px; /* Keep the width the same */
+  width: 400px; /* Keep the width the same */
   height: 650px; /* Stretch vertically */
 }
 

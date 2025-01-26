@@ -149,13 +149,8 @@ body {
 .speech_bubble_container {
   position: absolute;
   right: 0;
-  bottom: 30%;
+  bottom: 20%;
   z-index: 6;
-}
-
-.speech_bubble_container > img {
-  width: 450px; /* Keep the width the same */
-  height: 650px; /* Stretch vertically */
 }
 
 /*.title-bar {
