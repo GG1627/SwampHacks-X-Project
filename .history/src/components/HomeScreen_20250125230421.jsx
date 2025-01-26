@@ -82,22 +82,7 @@ const HomeScreen = () => {
           </div>
         </div>
       </div>
-
-      <div className="images_container">
-        <img
-          src="/src/assets/images/speech_bubble.png"
-          alt="Speech Bubble"
-          style={{ height: "62vh", marginTop: "5vh", width: "22vw" }}
-        />
-        <img
-          src="/src/assets/Videos/dogVID3.gif"
-          alt="Dog Animation"
-          width="300"
-          style={{ transform: `translateX(50px)` }}
-        />
-      </div>
-
-      {/* <div className="dog_container">
+      <div className="dog_container">
         <img
           src="/src/assets/Videos/dogVID3.gif"
           alt="Dog Animation"
@@ -106,7 +91,7 @@ const HomeScreen = () => {
       </div>
       <div className="speech_bubble_container">
         <img src="/src/assets/images/speech_bubble.png" alt="Speech Bubble" />
-      </div> */}
+      </div>
     </div>
   );
 };

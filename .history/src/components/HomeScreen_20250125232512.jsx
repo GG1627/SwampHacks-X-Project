@@ -93,7 +93,7 @@ const HomeScreen = () => {
           src="/src/assets/Videos/dogVID3.gif"
           alt="Dog Animation"
           width="300"
-          style={{ transform: `translateX(50px)` }}
+          style={{ transform: trans }}
         />
       </div>
 

@@ -24,7 +24,6 @@
   flex-direction: column;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  overflow: hidden;
 }
 
 .HomeScreen_title-bar2 {
@@ -87,8 +86,18 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   right: 0;
   top: 0;
-  height: 50vh; /* Fixed height */
+  height: 90vh; /* Fixed height */
   width: auto;
+  max-height: 90vh; /* Ensures it doesn’t exceed 90% of viewport height */
+  overflow: hidden; /* Prevents content from exceeding the container */
+}
+
+.images_container img {
+  flex-grow: 1; /* Allows images to take up available space */
+  max-width: 100%; /* Prevents overflow horizontally */
+  max-height: 100%; /* Ensures images fit within the container */
+  object-fit: contain; /* Keeps aspect ratio while fitting inside */
 }

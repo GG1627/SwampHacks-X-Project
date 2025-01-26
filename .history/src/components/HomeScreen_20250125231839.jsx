@@ -87,13 +87,12 @@ const HomeScreen = () => {
         <img
           src="/src/assets/images/speech_bubble.png"
           alt="Speech Bubble"
-          style={{ height: "62vh", marginTop: "5vh", width: "22vw" }}
+          style={{ height: "300px" }}
         />
         <img
           src="/src/assets/Videos/dogVID3.gif"
           alt="Dog Animation"
           width="300"
-          style={{ transform: `translateX(50px)` }}
         />
       </div>
 
