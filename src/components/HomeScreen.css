@@ -52,6 +52,15 @@
   margin-top: 50px;
 }
 
+.text-area-label {
+  font-size: 18px !important;
+  margin-left:15px;
+}
+
+.notepad-container {
+  margin: 50px;
+}
+
 .HomeScreen_pixelated-image {
   image-rendering: pixelated; /* Ensures pixelation */
   image-rendering: crisp-edges; /* Fallback for some browsers */
@@ -102,7 +111,7 @@
   display: block;
   position: absolute;
   top: 32%;
-  left: 17%;
+  left: 22%;
   border-radius: 8px;
   box-sizing: border-box;
   padding: 10px;
@@ -115,7 +124,7 @@
   font-size: 20px;
   position: absolute;
   top: 25%;
-  left: 16%;
+  left: 20.5%;
   z-index: 6;
 }
 
@@ -124,7 +133,7 @@
   width: 380px;
   position: absolute;
   top: 26%;
-  left: 16%;
+  left: 20%;
   z-index: 4;
   transform: rotate(3deg);
 }

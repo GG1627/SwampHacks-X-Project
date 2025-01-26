@@ -17,7 +17,6 @@ const WelcomeScreen = () => {
     navigate("/feeling");
   };
 
-
   useEffect(() => {
     if (isAuthenticated && user) {
       const currentDate = new Date().toLocaleDateString();

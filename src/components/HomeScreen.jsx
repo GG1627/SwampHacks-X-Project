@@ -106,8 +106,9 @@ const HomeScreen = () => {
           style={{ transform: `translateX(50px)` }}
         />
       </div>
-      <div>
-        <h1 className="text-area-label">How do you feel today?</h1>
+
+      <div className="notepad-container">
+        <h1 className="text-area-label">Whats on your mind?</h1>
         <textarea
           id="text-area-1"
           className="text-area-1"
