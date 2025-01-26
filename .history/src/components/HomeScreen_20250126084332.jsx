@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./HomeScreen.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import Grin from "/images/002.png";
-import Smile from "/images/001.png";
-import Mid from "/images/012.png";
-import Frown from "/images/010.png";
-import Cry from "/images/frame_029.png";
+import Grin from "/assets/images/002.png";
+import Smile from "/assets/images/001.png";
+import Mid from "/assets/images/012.png";
+import Frown from "/assets/images/010.png";
+import Cry from "/assets/images/frame_029.png";
 import Sentiment from "sentiment";
 import background from "../assets/XPbackground.jpg";
 
