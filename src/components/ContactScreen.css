@@ -1,4 +1,4 @@
-html.ResourceScreen, body.ResourceScreen {
+html.ContactScreen, body.ContactScreen {
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
 }
@@ -23,6 +23,13 @@ html.ResourceScreen, body.ResourceScreen {
     justify-content: center;
     align-items: center;
 }
+
+.form-row1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
 .root-text {
     color: black;

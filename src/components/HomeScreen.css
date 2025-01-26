@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     height: 100%;
     overflow: hidden; /* Prevent scrolling */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   
 .HomeScreen_container2 {
@@ -15,8 +17,8 @@ html, body {
   display: flex; /* Add this */
   flex-direction: column;
   background-image: url("/src/assets/XPbackground.jpg");
-
-  overflow-y: auto; /* Allow vertical scrolling */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   margin-left: 2%;
 }
 

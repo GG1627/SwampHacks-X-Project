@@ -5,6 +5,7 @@ import CalendarPage from "./components/CalendarPage";
 import FeelingScreen from "./components/FeelingScreen";
 import HomeScreen from "./components/HomeScreen";
 import ResourcesScreen from "./components/ResourcesScreen";
+import ContactScreen from "./components/ContactScreen";
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/feeling" element={<FeelingScreen />} />
         <Route path="/homescreen" element={<HomeScreen />} />
         <Route path="/resources" element={<ResourcesScreen />} />
+        <Route path="/contact" element={<ContactScreen />} />
       </Routes>
     </Router>
   );

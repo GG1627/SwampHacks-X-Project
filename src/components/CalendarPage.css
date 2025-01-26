@@ -1,3 +1,7 @@
+html.CalendarScreen, body.CalendarScreen {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
 .react-calendar {
     margin: 20px;
     display: flex;
@@ -58,7 +62,6 @@ ul {
     font-size: 25px;
     padding: 5px;
 }
-
 
 @font-face {
     font-family: 'CustomFont';

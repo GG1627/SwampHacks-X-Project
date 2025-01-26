@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./FeelingScreen.css";
-import Grin from "./002.png";
-import Smile from "./001.png";
-import Mid from "./012.png";
-import Frown from "./010.png";
-import Cry from "./frame_029.png";
+import Grin from "../assets/images/002.png";
+import Smile from "../assets/images/001.png";
+import Mid from "../assets/images/012.png";
+import Frown from "../assets/images/010.png";
+import Cry from "../assets/images/frame_029.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
 
@@ -31,6 +31,13 @@ const FeelingScreen = () => {
     }
   }, []);
 
+  useEffect(() => {
+    document.body.className = "FeelingScreen";
+    return () => {
+        document.body.className = "";
+    };
+}, []);
+
   const handleLogout = () => {
     logout({ returnTo: window.location.origin });
     localStorage.removeItem("user");
@@ -38,10 +45,10 @@ const FeelingScreen = () => {
 
   const handleMarkMood = () => {
     if (savedUser) {
-      localStorage.setItem(
-        `mood-${savedUser.email}`,
-        JSON.stringify({ mood: sliderValue })
-      );
+      const currentDate = new Date().toLocaleDateString(); // Get today's date in string format
+      const userMoods = JSON.parse(localStorage.getItem(`mood-${savedUser.email}`)) || {};
+      userMoods[currentDate] = sliderValue; // Save the mood for the current date
+      localStorage.setItem(`mood-${savedUser.email}`, JSON.stringify(userMoods));
       navigate("/homescreen");
     }
   };
