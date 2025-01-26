@@ -25,13 +25,6 @@ const HomeScreen = () => {
     navigate("/calendar");
   };
 
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      // Check if the pressed key is "Enter"
-      navigate("/calendar");
-    }
-  };
-
   const { user, logout } = useAuth0();
 
   useEffect(() => {
@@ -115,7 +108,7 @@ const HomeScreen = () => {
           onKeyDown={handleKeyDown}
         ></textarea>
         <img
-          src="/src/assets/images/sticky_note.png"
+          src="/src/assets/images/notepad_img.png"
           className="notepad-img"
         ></img>
       </div>
