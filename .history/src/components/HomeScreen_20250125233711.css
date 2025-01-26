@@ -89,6 +89,13 @@
   flex-direction: column;
   right: 0;
   top: 0;
-  height: 50vh; /* Fixed height */
-  width: auto;
+  height: 60vh; /* Fixed height for the container */
+  width: 100%; /* Ensure the container takes full width */
+  overflow: hidden; /* Prevents any overflow */
+}
+
+.images_container img {
+  width: 100%; /* Images take up full width of the container */
+  height: 100%; /* Images take up full height of the container */
+  object-fit: contain; /* Makes sure images maintain aspect ratio without distortion */
 }

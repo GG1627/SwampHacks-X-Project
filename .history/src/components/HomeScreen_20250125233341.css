@@ -89,6 +89,18 @@
   flex-direction: column;
   right: 0;
   top: 0;
-  height: 50vh; /* Fixed height */
-  width: auto;
+  height: 80vh; /* Fixed height */
+  width: 100%; /* Ensure the width of the container is the full width */
+  overflow: hidden; /* Prevents content from overflowing */
+  justify-content: space-between; /* Ensure there is space between the images */
+}
+
+.images_container img {
+  width: 100%; /* Allow images to scale to the width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Makes sure images are resized without distortion */
+}
+
+.speech_bubble_container {
+  margin-top: 5vh; /* Adjust margin if needed for spacing */
 }
