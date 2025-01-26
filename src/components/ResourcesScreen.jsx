@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./ResourcesScreen.css";
 import Grin from "./002.png";
 import Smile from "./001.png";
+import myImage from "./heart.png";
+
 import Mid from "./012.png";
 import Frown from "./010.png";
 import Cry from "./frame_029.png";
@@ -29,11 +31,15 @@ const ResourcesScreen = () => {
                 </div>
             </div>
             <div className="window-body ResourceScreen_window-body">
+            <div className="content-container">
+                <img src={myImage} className="heart-image" alt="Heart" />
             <p className="text-container">
               <span className="first-text">Reach</span>
               <span className="mid-text"> Your </span>{" "}
               <span className="reach-text">Community</span>
             </p>     
+            <img src={myImage} className="heart-image" alt="Heart" />
+            </div>
             <span className="ResourcesScreen_mid-text">
               UF Counseling & Wellness Center  {"    "}
               <a

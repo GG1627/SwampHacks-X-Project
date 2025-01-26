@@ -51,8 +51,8 @@
 .ResourcesScreen_mid-text {
     font-size: 25px; /* Smaller font size */
     text-align: center; /* Center the text */
-    margin: 20px 0; /* Add spacing between links */
-    margin-top: 60px;
+    margin: 0px 0; /* Add spacing between links */
+    margin-top: 40px;
 }
 
 .ResourcesScreen_dog_container{
