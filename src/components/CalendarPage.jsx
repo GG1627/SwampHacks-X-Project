@@ -50,6 +50,7 @@ const CalendarPage = () => {
       setMood(savedMoods[dateKey] || null); // Set the mood for the selected date or null if not found
     }
   
+    setActiveTab('mood'); // Ensure the "Mood" tab is selected by default
     setIsOpen(true);
   };
   
