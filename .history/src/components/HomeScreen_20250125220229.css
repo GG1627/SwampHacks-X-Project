@@ -8,7 +8,6 @@
   display: flex; /* Add this */
   flex-direction: column;
   overflow-y: auto; /* Allow vertical scrolling */
-  margin-left: 2%;
 }
 
 .HomeScreen_container {
@@ -44,6 +43,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .HomeScreen_text-container {
