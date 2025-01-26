@@ -94,17 +94,7 @@ const HomeScreen = () => {
         className="images_container"
         style={{ height: "50vh", marginTop: "5vh", width: "22vw" }}
       >
-        <img
-          src="/src/assets/images/speech_bubble.png"
-          alt="Speech Bubble"
-          height="400"
-        />
-        <img
-          src="/src/assets/Videos/dogVID3.gif"
-          alt="Dog Animation"
-          width="250"
-          style={{ transform: `translateX(50px)` }}
-        />
+
       </div>
 
       <div className="notepad-container">
@@ -119,6 +109,13 @@ const HomeScreen = () => {
           src="/src/assets/images/sticky_note.png"
           className="notepad-img"
         ></img>
+        <div className="ResourcesScreen_dog_container">
+              <img
+                src="/src/assets/Videos/dogVID3.gif"
+                alt="Dog Animation"
+                width="300"
+              />
+              </div>
       </div>
     </div>
   );
