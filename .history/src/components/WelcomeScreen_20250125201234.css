@@ -27,7 +27,7 @@
   font-size: 40px;
 }
 
-.WelcomeScreen_container {
+.HomeScreen_container {
   width: 100vw;
   overflow-y: auto; /* Allow vertical scrolling */
 
