@@ -22,7 +22,6 @@
   display: flex; /* Add this */
   flex-direction: column;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .HomeScreen_title-bar2 {

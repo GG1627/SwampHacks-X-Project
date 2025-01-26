@@ -56,7 +56,7 @@ const HomeScreen = () => {
           width="300"
         />
       </div>
-      <div className="speech_bubble_container">
+      <div className="dog_container">
         <img src="/src/assets/images/speech_bubble.png" alt="Speech Bubble" />
       </div>
     </div>
