@@ -3,7 +3,7 @@
     min-height: 100vh;
     background-color: #f5f5dc;
     color: black;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     display: flex; /* Add this */
     flex-direction: column;
@@ -25,7 +25,7 @@
   }
 
   
-  .title-bar2 {
+  .HomeScreen_title-bar2 {
     width: 100vw;
     height: 50px;
     position: fixed;
@@ -34,9 +34,33 @@
     background-color: #f5f5dc; /* Ensure this matches your desired background color */
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px; 
   }
 
+  .HomeScreen_content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .HomeScreen_text-container {
+    margin-top: 50px;
+  }
+
+  .HomeScreen_pixelated-image {
+    image-rendering: pixelated; /* Ensures pixelation */
+    image-rendering: crisp-edges; /* Fallback for some browsers */
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.HomeScreen_window {
+    min-height: 300px;
+    position: fixed;
+}
 
   
   /*.title-bar {

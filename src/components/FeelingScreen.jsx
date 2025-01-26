@@ -39,7 +39,7 @@ const FeelingScreen = () => {
   };
 
   return (
-    <div className="HomeScreen_container">
+    <div className="FeelingScreen_container">
     <div className="window" style={{ width: "700px" }}>
             <div className="title-bar title-bar3">
                 <div className="title-bar-text">Feeling Meter</div>
