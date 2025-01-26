@@ -11,7 +11,7 @@ const CalendarPage = () => {
     const navigate = useNavigate();
 
     const handleButtonCLick = () => {
-        navigate("/");
+        navigate("/homescreen");
       };
 
 
