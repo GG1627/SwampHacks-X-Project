@@ -28,10 +28,12 @@ const ResourcesScreen = () => {
 
                 </div>
             </div>
-            <div className="window-body">
-                
-                <label htmlFor="range27">High</label>
-                
+            <div className="window-body ResourceScreen_window-body">
+            <p className="text-container">
+              <span className="first-text">Reach</span>
+              <span className="mid-text"> Your </span>{" "}
+              <span className="reach-text">Community</span>
+            </p>            
             </div>
 
             </div>

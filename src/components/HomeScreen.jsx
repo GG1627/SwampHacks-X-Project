@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./HomeScreen.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -11,6 +11,7 @@ import Cry from "./frame_029.png";
 const HomeScreen = () => {
     const [activeTab, setActiveTab] = useState("tab-A");
     const navigate = useNavigate();
+    const [mood, setMood] = useState(3); // Default mood is 3 (Mid)
   
     const handleTabClick = (tabId) => {
       setActiveTab(tabId);
@@ -22,10 +23,38 @@ const HomeScreen = () => {
   
     const handleButtonCLick2 = () => {
         navigate("/calendar");
-      };
+    };
 
-    const { logout } = useAuth0();
-  
+    const { user, logout } = useAuth0();
+    
+    useEffect(() => {
+        if (user) {
+            const savedMood = JSON.parse(localStorage.getItem(`mood-${user.email}`));
+            if (savedMood && savedMood.mood) {
+              setMood(savedMood.mood);
+            }
+          }
+        }, [user]);
+        
+
+
+    const getImageForValue = (value) => {
+        switch (value) {
+          case 1:
+            return Cry;
+          case 2:
+            return Frown;
+          case 3:
+            return Mid;
+          case 4:
+            return Smile;
+          case 5:
+            return Grin;
+          default:
+            return Mid;
+        }
+      };
+          
     return (
       <div className="HomeScreen_container">
         <div className="title-bar HomeScreen_title-bar2">
@@ -49,7 +78,7 @@ const HomeScreen = () => {
               Today's Mood
             </p>
             <img
-              src={Grin}
+              src={getImageForValue(mood)}
               className="pixelated-image HomeScreen_pixelated-image"
             ></img>
           </div>

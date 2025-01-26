@@ -61,8 +61,12 @@ const CalendarPage = () => {
             alignItems: "center",
           }}
         >
-          <h1>Calendar</h1>
-          <h2>View your progress over time!</h2>
+
+        <p className="text-container">
+        <span className="reach-text"> Track Your </span>{" "}
+        <span className="first-text">Progress</span>
+        <span className="reach-text"> Overtime! </span>{" "}
+        </p>   
           <Calendar onChange={onChange} value={value} onClickDay={openModal} />
           <p style={{ marginTop: "10px", color: "red" }}>
             <i>click the red x to go back home</i>

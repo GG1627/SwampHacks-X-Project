@@ -13,6 +13,7 @@ const FeelingScreen = () => {
   const navigate = useNavigate();
   const { user, isAuthenticated, logout } = useAuth0();
   const [savedUser, setSavedUser] = useState(null); // Declare savedUser
+  const [sliderValue, setSliderValue] = useState(3);
 
 
   const handleButtonCLick = () => {
@@ -23,7 +24,6 @@ const FeelingScreen = () => {
     navigate("/homescreen");
   };
 
-  const [sliderValue, setSliderValue] = useState(3);
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser) {
@@ -35,6 +35,17 @@ const FeelingScreen = () => {
     logout({ returnTo: window.location.origin });
     localStorage.removeItem("user");
   }
+
+  const handleMarkMood = () => {
+    if (savedUser) {
+      localStorage.setItem(
+        `mood-${savedUser.email}`,
+        JSON.stringify({ mood: sliderValue })
+      );
+      navigate("/homescreen");
+    }
+  };
+
 
   const getImageForValue = (value) => {
     switch (value) {
@@ -64,7 +75,7 @@ const FeelingScreen = () => {
                 </div>
             </div>
             <div className="window-body">
-                <p><span className="root-text">How Are you</span> <span className="root-text2">Feeling</span> <span className="root-text">Today, </span> <span className="root-text">  {savedUser ? `${savedUser.name}` : ""}?</span></p>
+                <p><span className="root-text">How are you</span> <span className="root-text2">feeling</span> <span className="root-text">today, </span> <span className="root-text">  {savedUser ? `${savedUser.name}` : ""}?</span></p>
                 
                 <img src={getImageForValue(sliderValue)} alt="Pixelated Example" className="pixelated-image"></img>
                 <div className="field-row" style={{ width: "300px" }}>
@@ -74,7 +85,7 @@ const FeelingScreen = () => {
                 <label htmlFor="range27">High</label>
                 
             </div>
-                <button onClick={handleButtonCLick2}>Mark Mood</button>
+                <button onClick={handleMarkMood}>Mark Mood</button>
             </div>
             </div>
             </div>

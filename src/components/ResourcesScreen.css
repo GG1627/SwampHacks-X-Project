@@ -5,6 +5,8 @@
     background-color: #f5f5dc;
     color: black;
     align-items: center;
+    background-image: url("/src/assets/XPbackground.jpg");
+
     justify-content: center;
     display: flex; /* Add this */
     flex-direction: column;
