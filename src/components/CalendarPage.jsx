@@ -155,7 +155,7 @@ const CalendarPage = () => {
                         <p className="text-note">
                         {JSON.parse(localStorage.getItem(`notes-${user.email}`))?.[
                             selectedDate.toLocaleDateString()
-                        ] || "No note recorded for today."}
+                        ] || "No note recorded for this date."}
                         </p>
                     )}
                     </article>
