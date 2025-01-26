@@ -86,7 +86,7 @@ const WelcomeScreen = () => {
           <article role="tabpanel" id="tab-A" hidden={activeTab !== "tab-A"}>
             <p className="text-title2">What We Are</p>
             <p className="about">
-              Root & Reach is a hollistic web application designed to support
+              Root & Reach is a holistic web application designed to support
               student mental health, activism, and advocacy. Our mission is
               simple: "Help yourself, help others."
             </p>
