@@ -1,0 +1,70 @@
+.ResourcesScreen_container {
+    width: 100vw;
+    overflow-y: auto; /* Allow vertical scrolling */
+    min-height: 100vh;
+    background-color: #f5f5dc;
+    color: black;
+    align-items: center;
+    background-image: url("/src/assets/XPbackground.jpg");
+
+    justify-content: center;
+    display: flex; /* Add this */
+    flex-direction: column;
+}
+
+.ResourcesScreen_window-body {
+    display: flex; 
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.root-text {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.root-text2 {
+    color: #ff623a;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-row {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.ResourcesScreen_pixelated-image {
+    image-rendering: pixelated; /* Ensures pixelation */
+    image-rendering: crisp-edges; /* Fallback for some browsers */
+    height: 100px;
+    margin-top: 50px;
+}
+
+.ResourcesScreen_mid-text {
+    font-size: 25px; /* Smaller font size */
+    text-align: center; /* Center the text */
+    margin: 0px 0; /* Add spacing between links */
+    margin-top: 40px;
+}
+
+.ResourcesScreen_dog_container{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    z-index: 5;
+}

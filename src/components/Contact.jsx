@@ -14,7 +14,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="HomeScreen_container2">
+    <div className="Contact_container2">
       <div className="window" style={{ width: "350px" }}>
         <div className="title-bar title-bar3">
           <div className="title-bar-text">Contact Form</div>

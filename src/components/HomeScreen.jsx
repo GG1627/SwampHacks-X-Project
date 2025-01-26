@@ -28,6 +28,10 @@ const HomeScreen = () => {
     navigate("/calendar");
   };
 
+  const handleButtonCLick3 = () => {
+    navigate("/contact");
+  };
+
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       event.preventDefault(); // Prevent adding a new line
@@ -82,6 +86,7 @@ const HomeScreen = () => {
       <div className="title-bar HomeScreen_title-bar2">
         <button onClick={handleButtonCLick}>Resources</button>
         <button onClick={handleButtonCLick2}>Calendar</button>
+        <button onClick={handleButtonCLick3}>Reach Out</button>
         <button
           onClick={() => logout({ returnTo: `${window.location.origin}` })}
         >

@@ -1,4 +1,4 @@
-.HomeScreen_container2 {
+.Contact_container2 {
   width: 100vw;
   min-height: 100vh;
   background-color: #f5f5dc;
@@ -7,7 +7,6 @@
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
-  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 html,

@@ -16,7 +16,6 @@ html, body {
   flex-direction: column;
   background-image: url("/src/assets/XPbackground.jpg");
 
-  overflow-y: auto; /* Allow vertical scrolling */
   margin-left: 2%;
 }
 

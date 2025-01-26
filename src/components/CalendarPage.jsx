@@ -128,7 +128,7 @@ const CalendarPage = () => {
                     <menu role="tablist" aria-label="Sample Tabs">
                         <button role="tab" aria-selected={activeTab === 'mood'} aria-controls="mood" onClick={() => handleTabClick('mood')}>Mood</button>
                         <button role="tab" aria-selected={activeTab === 'logbook'} aria-controls="logbook" onClick={() => handleTabClick('logbook')}>Logbook</button>
-                        <button role="tab" aria-selected={activeTab === 'contacted'} aria-controls="contacted" onClick={() => handleTabClick('contacted')}>Contacted</button>
+                        <button role="tab" aria-selected={activeTab === 'contacted'} aria-controls="contacted" onClick={() => handleTabClick('contacted')}>Reach Out</button>
                     </menu>
                     <article role="tabpanel" id="mood" hidden={activeTab !== 'mood'}>
                         <h3>Day's Mood</h3>
@@ -155,12 +155,14 @@ const CalendarPage = () => {
                     )}
                     </article>
                     <article role="tabpanel" id="contacted" hidden={activeTab !== 'contacted'}>
-                        <h3>Contacted</h3>
-                        <ul>
-                            <li>Person 1</li>
-                            <li>Person 2</li>
-                            <li>Person 3</li>
-                        </ul>
+                        <h3>Reach Out To</h3>
+                        {user && selectedDate && (
+                        <p className="text-note">
+                        {JSON.parse(localStorage.getItem(`contacts-${user.email}`))?.[
+                            selectedDate.toLocaleDateString()
+                        ] || "No contact was recorded for this date."}
+                        </p>
+                    )}
                     </article>
                 </section>
             </div>
