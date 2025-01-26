@@ -4,14 +4,11 @@ import background from "../assets/XPbackground.jpg";
 import Calendar from "react-calendar";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import Grin from "./002.png";
-import Smile from "./001.png";
-import Mid from "./012.png";
-import myImage from "./heart.png";
-
-import Frown from "./010.png";
-import Cry from "./frame_029.png";
-
+import Grin from "../assets/images/002.png";
+import Smile from "../assets/images/001.png";
+import Mid from "../assets/images/012.png";
+import Frown from "../assets/images/010.png";
+import Cry from "../assets/images/frame_029.png";
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -77,7 +74,13 @@ const CalendarPage = () => {
           }
         };
             
-
+  useEffect(() => {
+    document.body.className = "CalendarScreen";
+    return () => {
+        document.body.className = "";
+    };
+}, []);
+        
   return (
     <div
       style={{
@@ -156,7 +159,7 @@ const CalendarPage = () => {
                     )}
                     </article>
                     <article role="tabpanel" id="contacted" hidden={activeTab !== 'contacted'}>
-                        <h3>Reach Out To</h3>
+                        <h3>Reach To</h3>
                         {user && selectedDate && (
                         <p className="text-note">
                         {JSON.parse(localStorage.getItem(`contacts-${user.email}`))?.[

@@ -32,6 +32,13 @@ const ContactScreen = () => {
     }
   };
 
+  useEffect(() => {
+      document.body.className = "ContactScreen";
+      return () => {
+          document.body.className = "";
+      };
+  }, []);
+
 
   return (
     <div className="ResourcesScreen_container">

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ResourcesScreen.css";
-import Grin from "./002.png";
-import Smile from "./001.png";
-import myImage from "./heart.png";
-
-import Mid from "./012.png";
-import Frown from "./010.png";
-import Cry from "./frame_029.png";
+import myImage from "../assets/images/heart.png";
+import Grin from "../assets/images/002.png";
+import Smile from "../assets/images/001.png";
+import Mid from "../assets/images/012.png";
+import Frown from "../assets/images/010.png";
+import Cry from "../assets/images/frame_029.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
 
@@ -19,7 +18,12 @@ const ResourcesScreen = () => {
     navigate("/homescreen");
   };
 
-
+  useEffect(() => {
+    document.body.className = "ResourceScreen";
+    return () => {
+        document.body.className = "";
+    };
+}, []);
   return (
     <div className="ResourcesScreen_container">
     <div className="window" style={{ width: "95vw", height: "95vh", margin: "auto" }}>

@@ -1,3 +1,7 @@
+html.ContactScreen, body.ContactScreen {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
 .ResourcesScreen_container {
     width: 100vw;
     overflow-y: auto; /* Allow vertical scrolling */
