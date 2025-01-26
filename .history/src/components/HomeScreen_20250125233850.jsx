@@ -96,6 +96,17 @@ const HomeScreen = () => {
           style={{ transform: `translateX(50px)` }}
         />
       </div>
+
+      {/* <div className="dog_container">
+        <img
+          src="/src/assets/Videos/dogVID3.gif"
+          alt="Dog Animation"
+          width="300"
+        />
+      </div>
+      <div className="speech_bubble_container">
+        <img src="/src/assets/images/speech_bubble.png" alt="Speech Bubble" />
+      </div> */}
     </div>
   );
 };

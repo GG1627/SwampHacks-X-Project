@@ -87,15 +87,25 @@ const HomeScreen = () => {
         <img
           src="/src/assets/images/speech_bubble.png"
           alt="Speech Bubble"
-          style={{ height: "55vh", marginTop: "5vh", width: "22vw" }}
+          style={{ marginTop: "0", width: "100%", height: "100%" }}
         />
         <img
           src="/src/assets/Videos/dogVID3.gif"
           alt="Dog Animation"
-          width="300"
-          style={{ transform: `translateX(50px)` }}
+          style={{ width: "100%", height: "100%" }}
         />
       </div>
+
+      {/* <div className="dog_container">
+        <img
+          src="/src/assets/Videos/dogVID3.gif"
+          alt="Dog Animation"
+          width="300"
+        />
+      </div>
+      <div className="speech_bubble_container">
+        <img src="/src/assets/images/speech_bubble.png" alt="Speech Bubble" />
+      </div> */}
     </div>
   );
 };

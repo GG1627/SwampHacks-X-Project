@@ -87,15 +87,30 @@ const HomeScreen = () => {
         <img
           src="/src/assets/images/speech_bubble.png"
           alt="Speech Bubble"
-          style={{ height: "55vh", marginTop: "5vh", width: "22vw" }}
+          style={{
+            height: "62vh",
+            marginTop: "5vh",
+            width: "100%",
+          }} /* Adjust width to fit container */
         />
         <img
           src="/src/assets/Videos/dogVID3.gif"
           alt="Dog Animation"
-          width="300"
-          style={{ transform: `translateX(50px)` }}
+          width="100%" /* Make width dynamic to fit container */
+          style={{ transform: `translateX(50px)` }} /* Adjust this if needed */
         />
       </div>
+
+      {/* <div className="dog_container">
+        <img
+          src="/src/assets/Videos/dogVID3.gif"
+          alt="Dog Animation"
+          width="300"
+        />
+      </div>
+      <div className="speech_bubble_container">
+        <img src="/src/assets/images/speech_bubble.png" alt="Speech Bubble" />
+      </div> */}
     </div>
   );
 };

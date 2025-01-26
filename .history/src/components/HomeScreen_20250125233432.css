@@ -1,0 +1,95 @@
+.HomeScreen_container2 {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f5f5dc;
+  color: black;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex; /* Add this */
+  flex-direction: column;
+  overflow-y: auto; /* Allow vertical scrolling */
+  margin-left: 2%;
+}
+
+.HomeScreen_container {
+  width: 100vw;
+  overflow-y: auto; /* Allow vertical scrolling */
+
+  min-height: 100vh;
+  background-color: #f5f5dc;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex; /* Add this */
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.HomeScreen_title-bar2 {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f5f5dc; /* Ensure this matches your desired background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.HomeScreen_content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.HomeScreen_text-container {
+  margin-top: 50px;
+}
+
+.HomeScreen_pixelated-image {
+  image-rendering: pixelated; /* Ensures pixelation */
+  image-rendering: crisp-edges; /* Fallback for some browsers */
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.HomeScreen_window {
+  min-height: 300px;
+  position: fixed;
+}
+
+/* .dog_container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+} */
+
+/* .speech_bubble_container {
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  z-index: 6;
+} */
+
+/* .speech_bubble_container > img {
+  width: 25vw; 
+  height: 65vh;
+} */
+
+.images_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  height: 80vh; /* Fixed height */
+  width: auto;
+  object-fit: contain;
+}
