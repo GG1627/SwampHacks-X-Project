@@ -4,7 +4,7 @@ import myImage from "./heart.png";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-const HomeScreen = () => {
+const WelcomeScreen = () => {
   const [activeTab, setActiveTab] = useState("tab-A");
   const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const HomeScreen = () => {
       <div className="title-bar title-bar2">
         <button onClick={handleButtonCLick}>Login</button>
       </div>
-      <div className="HomeScreen_container2">
+      <div className="WelcomeScreen_container2">
         <div className="window" style={{ width: "700px" }}>
           <div className="title-bar title-bar3">
             <div className="title-bar-text">Welcome To:</div>
@@ -100,4 +100,4 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default WelcomeScreen;

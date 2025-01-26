@@ -3,7 +3,7 @@
   min-height: 100vh;
   background-color: #f5f5dc;
   color: black;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.title-bar2 {
+.HomeScreen_title-bar2 {
   width: 100vw;
   height: 50px;
   position: fixed;
@@ -32,26 +32,32 @@
   background-color: #f5f5dc; /* Ensure this matches your desired background color */
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
-.dog_container {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
+.HomeScreen_content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.speech_bubble_container {
-  position: absolute;
-  right: 0;
-  bottom: 30%;
-  z-index: 6;
+.HomeScreen_text-container {
+  margin-top: 50px;
 }
 
-.speech_bubble_container > img {
-  width: 450px; /* Keep the width the same */
-  height: 650px; /* Stretch vertically */
+.HomeScreen_pixelated-image {
+  image-rendering: pixelated; /* Ensures pixelation */
+  image-rendering: crisp-edges; /* Fallback for some browsers */
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.HomeScreen_window {
+  min-height: 300px;
+  position: fixed;
 }
 
 /*.title-bar {
