@@ -15,7 +15,9 @@ const LoginScreen = () => {
       </div>
       <div className="window-body">
         {!isAuthenticated ? (
-          <button onClick={() => loginWithRedirect()}>Login with Google</button>
+          <button onClick={() => loginWithRedirect({
+            appState: { returnTo: "/feeling" },
+          })}>Login with Google</button>
         ) : (
           <>
             <p>You're logged in!</p>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./WelcomeScreen.css";
 import myImage from "./heart.png";
 import { useNavigate } from "react-router-dom";
@@ -18,10 +18,26 @@ const WelcomeScreen = () => {
 
   const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/feeling"); // Redirect to /feeling after login
+    }
+  }, [isAuthenticated, navigate]);
+  
   return (
     <div className="WelcomeScreen_container">
-      <div className="title-bar title-bar2">
-        <button onClick={handleButtonCLick}>Login</button>
+      <div className="title-bar HomeScreen_title-bar2">
+      {!isAuthenticated ? (
+          // Show login button if the user is not authenticated
+          <button onClick={() => loginWithRedirect({
+            appState: { returnTo: "/feeling"},
+          })}>Login</button>
+        ) : (
+          // Show logout button if the user is authenticated
+          <button onClick={() => logout({ returnTo: `${window.location.origin}` })}>
+            Logout
+          </button>
+        )}
       </div>
       <div className="WelcomeScreen_container2">
         <div className="window" style={{ width: "700px" }}>
@@ -65,7 +81,7 @@ const WelcomeScreen = () => {
           <article role="tabpanel" id="tab-A" hidden={activeTab !== "tab-A"}>
             <p className="text-title2">What We Are</p>
             <p className="about">
-              Root & Connect is a hollistic web application designed to support
+              Root & Reach is a hollistic web application designed to support
               student mental health, activism, and advocacy. Our mission is
               simple: "Help yourself, help others."
             </p>

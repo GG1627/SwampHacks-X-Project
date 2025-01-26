@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./FeelingScreen.css";
 import Grin from "./002.png";
@@ -6,9 +6,14 @@ import Smile from "./001.png";
 import Mid from "./012.png";
 import Frown from "./010.png";
 import Cry from "./frame_029.png";
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 const FeelingScreen = () => {
   const navigate = useNavigate();
+  const { user, isAuthenticated, logout } = useAuth0();
+  const [savedUser, setSavedUser] = useState(null); // Declare savedUser
+
 
   const handleButtonCLick = () => {
     navigate("/");
@@ -19,6 +24,17 @@ const FeelingScreen = () => {
   };
 
   const [sliderValue, setSliderValue] = useState(3);
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser) {
+      setSavedUser(storedUser);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    logout({ returnTo: window.location.origin });
+    localStorage.removeItem("user");
+  }
 
   const getImageForValue = (value) => {
     switch (value) {
@@ -48,7 +64,8 @@ const FeelingScreen = () => {
                 </div>
             </div>
             <div className="window-body">
-                <p><span className="root-text">How Are you</span> <span className="root-text2">Feeling</span> <span className="root-text">Today?</span></p>
+                <p><span className="root-text">How Are you</span> <span className="root-text2">Feeling</span> <span className="root-text">Today, </span> <span className="root-text">  {savedUser ? `${savedUser.name}` : ""}?</span></p>
+                
                 <img src={getImageForValue(sliderValue)} alt="Pixelated Example" className="pixelated-image"></img>
                 <div className="field-row" style={{ width: "300px" }}>
                 <label htmlFor="range25"></label>

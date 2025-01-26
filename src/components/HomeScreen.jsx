@@ -18,20 +18,26 @@ const HomeScreen = () => {
     };
   
     const handleButtonCLick = () => {
-      navigate("/");
+      navigate("/resources");
     };
   
     const handleButtonCLick2 = () => {
         navigate("/calendar");
       };
 
-    const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+    const { logout } = useAuth0();
   
     return (
       <div className="HomeScreen_container">
         <div className="title-bar HomeScreen_title-bar2">
           <button onClick={handleButtonCLick}>Resources</button>
           <button onClick={handleButtonCLick2}>Calendar</button>
+          <button onClick={() => logout({ returnTo: `${window.location.origin}` })}>
+            Logout
+          </button>
+          <div className="title-bar-controls">
+          
+          </div>
         </div>
         <div className="HomeScreen_container2">
         <div className="window HomeScreen_window" style={{ width: "200px" }}>

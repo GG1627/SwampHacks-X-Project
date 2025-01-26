@@ -60,8 +60,9 @@ body {
   left: 0;
   background-color: #f5f5dc; /* Ensure this matches your desired background color */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 10px; 
 }
 
 .title-bar3 {
