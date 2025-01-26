@@ -1,9 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
 .WelcomeScreen_container2 {
   width: 100vw;
   min-height: 100vh;
   background-color: #f5f5dc;
   color: black;
   align-items: center;
+
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
