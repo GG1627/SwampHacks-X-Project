@@ -77,8 +77,8 @@
 }
 
 .speech_bubble_container > img {
-  width: 25vw; /* Keep the width the same */
-  height: 65vh; /* Stretch vertically */
+  width: 10vw; /* Keep the width the same */
+  height: 40vh; /* Stretch vertically */
 }
 
 /*.title-bar {

@@ -77,7 +77,7 @@
 }
 
 .speech_bubble_container > img {
-  width: 25vw; /* Keep the width the same */
+  width: 30vw; /* Keep the width the same */
   height: 65vh; /* Stretch vertically */
 }
 
