@@ -187,7 +187,7 @@ const HomeScreen = () => {
             onKeyDown={handleKeyDown}
           ></textarea>
           <img
-            src="/src/assets/images/sticky_note.png"
+            src="images\sticky_note.png"
             className="notepad-img"
           ></img>
           <div
