@@ -38,10 +38,10 @@ const FeelingScreen = () => {
 
   const handleMarkMood = () => {
     if (savedUser) {
-      localStorage.setItem(
-        `mood-${savedUser.email}`,
-        JSON.stringify({ mood: sliderValue })
-      );
+      const currentDate = new Date().toLocaleDateString(); // Get today's date in string format
+      const userMoods = JSON.parse(localStorage.getItem(`mood-${savedUser.email}`)) || {};
+      userMoods[currentDate] = sliderValue; // Save the mood for the current date
+      localStorage.setItem(`mood-${savedUser.email}`, JSON.stringify(userMoods));
       navigate("/homescreen");
     }
   };

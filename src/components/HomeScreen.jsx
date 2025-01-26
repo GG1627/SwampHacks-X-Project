@@ -7,11 +7,14 @@ import Smile from "./001.png";
 import Mid from "./012.png";
 import Frown from "./010.png";
 import Cry from "./frame_029.png";
+import Sentiment from 'sentiment';
 
 const HomeScreen = () => {
   const [activeTab, setActiveTab] = useState("tab-A");
   const navigate = useNavigate();
   const [mood, setMood] = useState(3); // Default mood is 3 (Mid)
+  const sentiment = new Sentiment(); // Initialize the Sentiment instance
+
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
@@ -27,8 +30,18 @@ const HomeScreen = () => {
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      // Check if the pressed key is "Enter"
-      navigate("/calendar");
+      event.preventDefault(); // Prevent adding a new line
+      const textArea = document.getElementById("text-area-1");
+      const userInput = textArea.value; // Get the current text
+      
+      if (userInput && user) {
+        const today = new Date().toLocaleDateString(); // Get today's date
+        const savedNotes = JSON.parse(localStorage.getItem(`notes-${user.email}`)) || {}; // Retrieve existing notes
+        savedNotes[today] = userInput; // Save the note for today's date
+        localStorage.setItem(`notes-${user.email}`, JSON.stringify(savedNotes)); // Store notes back to localStorage
+      }
+  
+      textArea.value = ""; // Clear the text after pressing Enter
     }
   };
 
@@ -36,9 +49,13 @@ const HomeScreen = () => {
 
   useEffect(() => {
     if (user) {
-      const savedMood = JSON.parse(localStorage.getItem(`mood-${user.email}`));
-      if (savedMood && savedMood.mood) {
-        setMood(savedMood.mood);
+      const savedMoods = JSON.parse(localStorage.getItem(`mood-${user.email}`)) || {};
+      const today = new Date().toLocaleDateString(); // Format today's date
+      const todayMood = savedMoods[today]; // Retrieve mood for today
+      if (todayMood) {
+        setMood(todayMood); // Set today's mood
+      } else {
+        setMood(null); // No mood recorded for today
       }
     }
   }, [user]);
@@ -82,10 +99,15 @@ const HomeScreen = () => {
             <p className="text-container HomeScreen_text-container">
               Today's Mood
             </p>
-            <img
-              src={getImageForValue(mood)}
-              className="pixelated-image HomeScreen_pixelated-image"
-            ></img>
+            {mood ? (
+    <img
+      src={getImageForValue(mood)}
+      className="pixelated-image HomeScreen_pixelated-image"
+      alt="Today's Mood"
+    />
+  ) : (
+    <p>No mood recorded for today.</p>
+  )}
           </div>
         </div>
       </div>

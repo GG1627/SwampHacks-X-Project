@@ -27,21 +27,11 @@ const CalendarPage = () => {
 
 
   useEffect(() => {
-    if (isAuthenticated && user) {
-      const loginDate = JSON.parse(
-        localStorage.getItem(`loginDate-${user.email}`)
-      );
-      if (loginDate && loginDate.date) {
-        console.log("User's login date:", loginDate.date);
-      }
-    }
     if (user) {
-        const savedMood = JSON.parse(localStorage.getItem(`mood-${user.email}`));
-        if (savedMood && savedMood.mood) {
-          setMood(savedMood.mood);
-        }
-      }
-  }, [isAuthenticated, user]);
+      const savedMoods = JSON.parse(localStorage.getItem(`mood-${user.email}`)) || {};
+      setMood(savedMoods); // Set all moods for the user
+    }
+  }, [user]);  
   
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
@@ -53,8 +43,16 @@ const CalendarPage = () => {
 
   const openModal = (date) => {
     setSelectedDate(date);
+  
+    if (user) {
+      const savedMoods = JSON.parse(localStorage.getItem(`mood-${user.email}`)) || {};
+      const dateKey = date.toLocaleDateString(); // Format the date as a string
+      setMood(savedMoods[dateKey] || null); // Set the mood for the selected date or null if not found
+    }
+  
     setIsOpen(true);
   };
+  
 
   const closeModal = () => {
     setIsOpen(false);
@@ -139,16 +137,27 @@ const CalendarPage = () => {
                     </menu>
                     <article role="tabpanel" id="mood" hidden={activeTab !== 'mood'}>
                         <h3>Day's Mood</h3>
-                        <div style= {{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                          <img
-                          src={getImageForValue(mood)}
-                          className="pixelated-image HomeScreen_pixelated-image"
-                          ></img>
-                        </div>
+                        {mood ? (
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <img
+        src={getImageForValue(mood)}
+        className="pixelated-image HomeScreen_pixelated-image"
+        alt="Mood Icon"
+        />
+        </div>
+        ) : (
+            <p>No mood recorded for this date.</p>
+        )}
                     </article>
                     <article role="tabpanel" id="logbook" hidden={activeTab !== 'logbook'}> 
                         <h3>Logbook</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolores iste molestiae illo ex voluptatum accusamus asperiores inventore pariatur officia, expedita aut necessitatibus quos quam quas, tempora quia magnam rerum.</p>
+                        {user && selectedDate && (
+                        <p className="text-note">
+                        {JSON.parse(localStorage.getItem(`notes-${user.email}`))?.[
+                            selectedDate.toLocaleDateString()
+                        ] || "No note recorded for today."}
+                        </p>
+                    )}
                     </article>
                     <article role="tabpanel" id="contacted" hidden={activeTab !== 'contacted'}>
                         <h3>Contacted</h3>
