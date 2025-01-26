@@ -1,4 +1,4 @@
-.WelcomeScreen_container2 {
+.HomeScreen_container2 {
   width: 100vw;
   min-height: 100vh;
   background-color: #f5f5dc;
@@ -26,7 +26,6 @@
 .text-container span {
   font-size: 40px;
 }
-
 
 .WelcomeScreen_container {
   width: 100vw;

@@ -1,4 +1,4 @@
-.WelcomeScreen_container2 {
+.HomeScreen_container2 {
   width: 100vw;
   min-height: 100vh;
   background-color: #f5f5dc;
@@ -8,6 +8,7 @@
   display: flex; /* Add this */
   flex-direction: column;
   overflow-y: auto; /* Allow vertical scrolling */
+
 }
 
 .content-container {
@@ -28,7 +29,7 @@
 }
 
 
-.WelcomeScreen_container {
+.HomeScreen_container {
   width: 100vw;
   overflow-y: auto; /* Allow vertical scrolling */
 
@@ -39,12 +40,10 @@
   justify-content: center;
   display: flex; /* Add this */
   flex-direction: column;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
-html,
-body {
+
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -68,11 +67,13 @@ body {
   height: 30px;
 }
 
+
+
 @font-face {
-  font-family: "CustomFont";
-  src: url("../assets/ms-sans-serif-1.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'CustomFont';
+  src: url('../assets/ms-sans-serif-1.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
 }
 
 .window {
@@ -80,7 +81,7 @@ body {
   align-items: center;
   font-size: 50px;
   width: auto;
-  font-family: "CustomFont", sans-serif;
+  font-family: 'CustomFont', sans-serif;
   background-color: #f5f5dc;
   margin-bottom: 50px;
 }
@@ -102,50 +103,48 @@ body {
   height: 150px;
 }
 
-.first-text {
-  font-family: "CustomFont";
+.first-text{
+  font-family: 'CustomFont';
   color: #ff623a;
 }
 
-.reach-text {
-  font-family: "CustomFont";
+.reach-text{
+  font-family: 'CustomFont';
   color: #0253a8;
+
 }
 
-.mid-text {
-  font-family: "CustomFont";
+.mid-text{
+  font-family: 'CustomFont';
   color: black;
 }
 
-.text-title {
-  font-family: "CustomFont";
+.text-title{
+  font-family: 'CustomFont';
   color: #ff623a;
   font-size: 40px;
 }
 
-.text-title2 {
-  font-family: "CustomFont";
+.text-title2{
+  font-family: 'CustomFont';
   color: #0253a8;
   font-size: 40px;
 }
 
-.about {
+.about{
   margin-top: 10px;
-  font-family: "CustomFont";
+  font-family: 'CustomFont';
   color: black;
   font-size: 20px;
 }
+
+
+
 
 .tabs {
   background-color: #f5f5dc;
 }
 
-.dog_container {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-}
 
 /*.title-bar {
   background: black !important

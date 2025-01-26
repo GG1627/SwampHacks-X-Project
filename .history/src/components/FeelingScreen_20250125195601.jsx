@@ -2,24 +2,25 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./FeelingScreen.css";
 import Grin from "./002.png";
-import Smile from "./001.png";
-import Mid from "./012.png";
-import Frown from "./010.png";
-import Cry from "./frame_029.png";
+import Smile from "./001.png"; 
+import Mid from "./012.png"; 
+import Frown from "./010.png"; 
+import Cry from "./frame_029.png"; 
 
 const FeelingScreen = () => {
+
   const navigate = useNavigate();
 
-  const handleButtonCLick = () => {
-    navigate("/");
-  };
-
-  const handleButtonCLick2 = () => {
-    navigate("/homescreen");
-  };
-
+    const handleButtonCLick = () => {
+        navigate("/");
+      };
+    
+    const handleButtonCLick2 = () => {
+      navigate("/homescreen");
+    };
+  
   const [sliderValue, setSliderValue] = useState(3);
-
+  
   const getImageForValue = (value) => {
     switch (value) {
       case 1:
@@ -38,7 +39,7 @@ const FeelingScreen = () => {
   };
 
   return (
-    <div className="FeelingScreen_container">
+    <div className="HomeScreen_container">
     <div className="window" style={{ width: "700px" }}>
             <div className="title-bar title-bar3">
                 <div className="title-bar-text">Feeling Meter</div>
