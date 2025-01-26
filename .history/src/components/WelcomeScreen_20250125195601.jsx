@@ -22,6 +22,7 @@ const HomeScreen = () => {
     <div className="HomeScreen_container">
       <div className="title-bar title-bar2">
         <button onClick={handleButtonCLick}>Login</button>
+      
       </div>
       <div className="HomeScreen_container2">
         <div className="window" style={{ width: "700px" }}>
@@ -36,9 +37,10 @@ const HomeScreen = () => {
           <div className="content-container">
             <img src={myImage} className="heart-image" alt="Heart" />
             <p className="text-container">
-              <span className="first-text">Root</span>
-              <span className="mid-text"> & </span>{" "}
+          
+              <span className="first-text">Root</span><span className="mid-text"> & </span>{" "}
               <span className="reach-text">Reach</span>
+          
             </p>
             <img src={myImage} className="heart-image" alt="Heart" />
           </div>
@@ -73,10 +75,9 @@ const HomeScreen = () => {
           <article role="tabpanel" id="tab-B" hidden={activeTab !== "tab-B"}>
             <p className="text-title">Who We Are</p>
             <p className="about">
-              Four Passionate Programmers: Alejandro Gonzalez, Gael Garcia, John
-              Lewis, Hector Cruz
+              Four Passionate Programmers: Alejandro Gonzalez, Gael Garcia, John Lewis, Hector Cruz
             </p>
-
+            
             <p className="about">
               Read more at{"    "}
               <a
@@ -87,14 +88,8 @@ const HomeScreen = () => {
               </a>
             </p>
           </article>
+
         </section>
-      </div>
-      <div className="dog_container">
-        <img
-          src="/src/assets/Videos/dogVID2.gif"
-          alt="Dog Animation"
-          width="300"
-        />
       </div>
     </div>
   );

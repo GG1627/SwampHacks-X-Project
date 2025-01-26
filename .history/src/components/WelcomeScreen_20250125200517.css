@@ -138,10 +138,9 @@ body {
 }
 
 .dog_container {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
-  z-index: 5;
 }
 
 /*.title-bar {

@@ -93,7 +93,7 @@ const HomeScreen = () => {
         <img
           src="/src/assets/Videos/dogVID2.gif"
           alt="Dog Animation"
-          width="300"
+          width="200"
         />
       </div>
     </div>

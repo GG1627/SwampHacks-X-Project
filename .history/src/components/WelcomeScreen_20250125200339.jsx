@@ -88,13 +88,13 @@ const HomeScreen = () => {
             </p>
           </article>
         </section>
-      </div>
-      <div className="dog_container">
-        <img
-          src="/src/assets/Videos/dogVID2.gif"
-          alt="Dog Animation"
-          width="300"
-        />
+        <div className="dog_container">
+          <img
+            src="/src/assets/Videos/dogVID.gif"
+            alt="Dog Animation"
+            width="200"
+          />
+        </div>
       </div>
     </div>
   );
