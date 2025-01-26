@@ -104,18 +104,13 @@ const CalendarPage = () => {
             alignItems: "center",
           }}
         >
-        <div className="content-container">
-        <img src={myImage} className="heart-image" alt="Heart" />    
         <p className="text-container">
         <span className="reach-text"> Track your </span>{" "}
         <span className="first-text">progress</span>
         <span className="reach-text"> over time! </span>{" "}
         </p>   
-        <img src={myImage} className="heart-image" alt="Heart" />
-        </div>
           <Calendar onChange={onChange} value={value} onClickDay={openModal} />
           <p style={{ marginTop: "15px", color: "red" }}>
-            <i>click the red x to go back home</i>
           </p>
         </div>
       </div>
