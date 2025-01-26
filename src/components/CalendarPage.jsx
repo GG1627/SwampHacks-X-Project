@@ -1,20 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./CalendarPage.css";
 import background from "../assets/XPbackground.jpg";
 import Calendar from "react-calendar";
 import { useNavigate } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+import Grin from "./002.png";
+import Smile from "./001.png";
+import Mid from "./012.png";
+import Frown from "./010.png";
+import Cry from "./frame_029.png";
+
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
 const CalendarPage = () => {
   const navigate = useNavigate();
-
+  const [mood, setMood] = useState(3); 
   const [activeTab, setActiveTab] = useState('Mood');
   const [value, onChange] = useState(new Date());
   const [modalIsOpen, setIsOpen] = useState(false); 
   const [selectedDate, setSelectedDate] = useState(null); 
+  const { user, isAuthenticated } = useAuth0();
 
+
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      const loginDate = JSON.parse(
+        localStorage.getItem(`loginDate-${user.email}`)
+      );
+      if (loginDate && loginDate.date) {
+        console.log("User's login date:", loginDate.date);
+      }
+    }
+    if (user) {
+        const savedMood = JSON.parse(localStorage.getItem(`mood-${user.email}`));
+        if (savedMood && savedMood.mood) {
+          setMood(savedMood.mood);
+        }
+      }
+  }, [isAuthenticated, user]);
   
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
@@ -33,6 +58,24 @@ const CalendarPage = () => {
     setIsOpen(false);
     setSelectedDate(null); 
   };
+
+  const getImageForValue = (value) => {
+          switch (value) {
+            case 1:
+              return Cry;
+            case 2:
+              return Frown;
+            case 3:
+              return Mid;
+            case 4:
+              return Smile;
+            case 5:
+              return Grin;
+            default:
+              return Mid;
+          }
+        };
+            
 
   return (
     <div
@@ -91,7 +134,10 @@ const CalendarPage = () => {
                     </menu>
                     <article role="tabpanel" id="mood" hidden={activeTab !== 'mood'}>
                         <h3>Day's Mood</h3>
-                        <progress value="50" max="100" style={{width: '100%', marginBottom: '15px'}}></progress>
+                        <img
+                        src={getImageForValue(mood)}
+                        className="pixelated-image HomeScreen_pixelated-image"
+                        ></img>
                     </article>
                     <article role="tabpanel" id="logbook" hidden={activeTab !== 'logbook'}> 
                         <h3>Logbook</h3>

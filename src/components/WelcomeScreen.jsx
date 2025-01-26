@@ -7,6 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 const WelcomeScreen = () => {
   const [activeTab, setActiveTab] = useState("tab-A");
   const navigate = useNavigate();
+  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
@@ -16,13 +17,18 @@ const WelcomeScreen = () => {
     navigate("/feeling");
   };
 
-  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
   useEffect(() => {
-    if (isAuthenticated) {
+    if (isAuthenticated && user) {
+      const currentDate = new Date().toLocaleDateString();
+      localStorage.setItem(
+        `loginDate-${user.email}`,
+        JSON.stringify({ date: currentDate })
+      );
+      console.log(`Stored login date for ${user.email}: ${currentDate}`);
       navigate("/feeling"); // Redirect to /feeling after login
     }
-  }, [isAuthenticated, navigate]);
+  }, [isAuthenticated, user, navigate]);
   
   return (
     <div className="WelcomeScreen_container">
