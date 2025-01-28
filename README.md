@@ -8,8 +8,6 @@
 - John Lewis - https://github.com/johnl-dev
 - Hector Cruz - 
 
-# Video Demo
-
 # Technologies Used
 JavaScript, React, CSS
 
@@ -20,7 +18,7 @@ This project was created within 24 hours during the SwampHacks X hackathon, unde
 ### Overview
 Root & Reach is a holistic web application designed to support student mental health, activism, and advocacy. Our mission is simple: "Help yourself, help others."
 
-# Login Screen
+### Login Screen
 ![Screenshot 2025-01-28 115408](https://github.com/user-attachments/assets/64cdbae0-9678-4090-a0c8-e91f4f743453)
 
 - Developed a JavaScript, React, and CSS web application with a nostalgic Windows XP-inspired design using a specialized styling library, intended to invoke a sense of home and nostalgia.
@@ -32,12 +30,12 @@ Root & Reach is a holistic web application designed to support student mental he
 - Integrated React Router DOM for seamless navigation and intuitive user experience.
 - Connected to multiple APIs, including a daily quote generator, to deliver dynamic and engaging content.
 
-# Gauging User Emotion
+### Gauging User Emotion
 ![Screenshot 2025-01-28 115435](https://github.com/user-attachments/assets/9c3d9918-07a8-43b4-896b-0830c11d0fad)
 
 - Users are prompted to reflect on and gauge their feelings for the day, emphasizing that acknowledging one’s current well-being is a vital first step toward mental health improvement.
 
-# Home Screen
+### Home Screen
 ![Screenshot 2025-01-28 115505](https://github.com/user-attachments/assets/739f3569-a986-4b13-9cc7-51d4de3de71e)
 
 - Users are directed to a home screen designed to resemble a Windows XP desktop bulletin board, combining nostalgia with functionality to create an engaging user experience.
@@ -53,7 +51,7 @@ Root & Reach is a holistic web application designed to support student mental he
 - Users are shown the time taken by the sorting algorithm and are given a list of games that meet their search criteria and what those values are.
 
 # Resources
-https://www.kaggle.com/datasets/jummyegg/rawg-game-dataset
+https://botoxparty.github.io/XP.css/
 
 # Author
 Alejandro Gonzalez - https://github.com/alejgonza04
