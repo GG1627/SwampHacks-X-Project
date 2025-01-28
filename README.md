@@ -39,16 +39,32 @@ Root & Reach is a holistic web application designed to support student mental he
 ![Screenshot 2025-01-28 115505](https://github.com/user-attachments/assets/739f3569-a986-4b13-9cc7-51d4de3de71e)
 
 - Users are directed to a home screen designed to resemble a Windows XP desktop bulletin board, combining nostalgia with functionality to create an engaging user experience.
+- Users are greeted with a unique daily inspirational quote upon login, delivered through seamless integration with an external API.
+- Users are shown an MP4 video of dogs, leveraging research that watching animals can boost serotonin levels and enhance mood (who doesn't like dogs?).
 
-# How The Results Are Collected
-- The C++ code initially takes in the game's name, finds that game, then filters out all game's in the dataset that don't have that game's same genre.
-- Based on the game console, the dataset is then further filters out all game's that aren't on that console.
-- Utilizing the sorting method and the search criteria, the dataset is then sorted.
+# Sticky Note For Journaling
+![Screenshot 2025-01-28 114944](https://github.com/user-attachments/assets/5754fa0f-4887-45c4-a246-34654fd35bc1)
+- Users can log daily events and their associated feelings, fostering an introspective approach to understanding and processing their emotions.
 
-# The Results
-![Screenshot 2024-12-04 124910](https://github.com/user-attachments/assets/4b2996b0-bcee-43d5-bf1c-28b87cd4afab)
+### Progress Calendar
+![Screenshot 2025-01-28 114955](https://github.com/user-attachments/assets/76a31839-0ac4-44fd-8169-aa4d5b9f5bc6)
+- Users are able to access a calendar to visualize their progress and journal entries overtime.
+- This practice helps individuals set and achieve goals, stay organized, and create a sense of accomplishment as they visually see their progress. This can boost motivation, reduce stress, and enhance overall mental clarity, contributing positively to mental health and productivity.
+![Screenshot 2025-01-28 115004](https://github.com/user-attachments/assets/0678b5f5-fa56-4a87-9a74-76223129650e)
 
-- Users are shown the time taken by the sorting algorithm and are given a list of games that meet their search criteria and what those values are.
+![Screenshot 2025-01-28 115124](https://github.com/user-attachments/assets/036783d0-ed9d-4170-b037-e7c8dd5d8239)
+
+![Screenshot 2025-01-28 115331](https://github.com/user-attachments/assets/02f67cd1-c325-4e19-be2b-5875ab5ec11e)
+
+### Reach Out Reminder
+![Screenshot 2025-01-28 115249](https://github.com/user-attachments/assets/c0f4304a-8322-4101-89e1-18a0c0d931e9)
+- Users are able to add reminders to the calendar to reach out to ones they're close with.
+- Acts of reaching out and fostering connections strengthen social bonds, reduce feelings of isolation, and promote emotional support. Additionally, helping or showing care for others can boost your own sense of purpose and happiness, thanks to the psychological benefits of altruism and community engagement.
+- This is especially useful for college students who are often too busy and can forget to reach out and check close ones.
+
+### Reach Your Community
+![Screenshot 2025-01-28 115139](https://github.com/user-attachments/assets/f56b27e7-d979-49b4-bfc2-d05ede82b57a)
+- This page provides direct access to UF's mental health and wellness groups, along with upcoming events such as yoga sessions and workshops, emphasizing the importance of fostering a sense of community to enhance overall well-being.
 
 # Resources
 https://botoxparty.github.io/XP.css/
