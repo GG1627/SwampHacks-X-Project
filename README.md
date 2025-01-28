@@ -14,7 +14,7 @@
 JavaScript, React, CSS
 
 # About 
-This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. This project was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term.
+This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. It was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term.
 
 # Features
 ### Overview
