@@ -6,7 +6,7 @@
 - Alejandro Gonzalez - https://github.com/alejgonza04
 - Gael Garcia - https://github.com/GG1627
 - John Lewis - https://github.com/johnl-dev
-- Hector Cruz - 
+- Hector Cruz - https://github.com/hcru77
 
 # Technologies Used
 JavaScript, React, CSS
@@ -64,8 +64,11 @@ Root & Reach is a holistic web application designed to support student mental he
 ![Screenshot 2025-01-28 115331](https://github.com/user-attachments/assets/02f67cd1-c325-4e19-be2b-5875ab5ec11e)
 
 ### Reach Your Community
-![Screenshot 2025-01-28 115139](https://github.com/user-attachments/assets/f56b27e7-d979-49b4-bfc2-d05ede82b57a)
+![Screenshot 2025-01-28 124006](https://github.com/user-attachments/assets/1104c236-4adb-42a4-be4c-af4bf217af38)
 - This page provides direct access to UF's mental health and wellness groups, along with upcoming events such as yoga sessions and workshops, emphasizing the importance of fostering a sense of community to enhance overall well-being.
+
+# Key Takeaways
+Considering this was each contributor's first hackathon, we gained invaluable experience in planning, developing, and presenting a project under intense time constraints. Throughout the duration of the hackathon, we learned to adjust our scope, prioritizing key aspects of the project while scaling back on others to ensure we delivered a complete and functional product. Despite the challenges, we are proud of what we accomplished and are excited to further develop this project in the future.
 
 # Resources
 https://botoxparty.github.io/XP.css/
