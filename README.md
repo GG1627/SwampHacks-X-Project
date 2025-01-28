@@ -14,16 +14,23 @@
 JavaScript, React, CSS
 
 # About 
-Root & Reach is a holistic web application designed to support student mental health, activism, and advocacy. Our mission is simple: "Help yourself, help others." This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. This project was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term.
+This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. This project was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term.
 
 # Features
 ### Overview
-Game Twin is a web application designed to help you relive the joy of your favorite video games by finding the perfect match. Leveraging a dataset of over 470,0000 video games, Game Twin analyzes key attributes to recommend the most similar titles, ensuring you can recreate the nostalgia you had when picking the game up for the first time.
+Root & Reach is a holistic web application designed to support student mental health, activism, and advocacy. Our mission is simple: "Help yourself, help others."
 
-### How It Works
-- We utilized a Kaggle dataset that had over 470,000 video game entries, as well as their respective genre, metacritic rating, achievement count, suggestion count, etc.
-- This dataset was parsed in C++ and sorted using Quick Sort and Cocktail Sort based on what parameters were requested to sort by.
-- Python, Django, and Flask were used to connect the C++ code to the HTML and CSS front-end. To do this, the subprocess Python module was employed to parse the output of the C++ code and capture results. These results were then passed to the front-end to be shown.
+# Login Screen
+- Developed a JavaScript, React, and CSS web application with a nostalgic Windows XP-inspired design using a specialized styling library, intended to invoke a sense of home and nostalgia.
+
+![Screenshot 2025-01-28 115408](https://github.com/user-attachments/assets/64cdbae0-9678-4090-a0c8-e91f4f743453)
+
+![Screenshot 2025-01-28 115417](https://github.com/user-attachments/assets/0cbf2749-5742-4dd9-b084-bd16bca14414)
+
+- Implemented authentication functionality using Auth0 for secure login and user management.
+
+- Integrated React Router DOM for seamless navigation and intuitive user experience.
+- Connected to multiple APIs, including a daily quote generator, to deliver dynamic and engaging content.
 
 # Collecting Initial Data
 ![Screenshot 2024-12-04 124851](https://github.com/user-attachments/assets/2cef139c-e353-411d-9b42-5ff9197b72a8)
