@@ -9,7 +9,7 @@
 - Hector Cruz - https://github.com/hcru77
 
 # Technologies Used
-JavaScript, React, CSS
+JavaScript, React, CSS, Auth0
 
 # About 
 This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. It was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term. Therapists often recommend journaling and reaching out to others as effective strategies for improving mental health. Journaling helps individuals process their emotions, gain self-awareness, and manage stress, while connecting with others fosters support, reduces feelings of isolation, and strengthens relationships, all of which contribute positively to mental well-being. These elements formed the foundation of our project, emphasizing the value of prioritizing mental well-being in both personal and professional spaces.
