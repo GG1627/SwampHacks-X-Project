@@ -14,16 +14,16 @@
 JavaScript, React, CSS
 
 # About 
-This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. It was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term.
+This project was created within 24 hours during the SwampHacks X hackathon, under the Social Good & Human Experience category. It was created with a focus on student mental health and community resources. In the tech field, taking breaks and connecting with others is essential, not only for one's wellbeing, but also to aid productivity in the long-term. Therapists often recommend journaling and reaching out to others as effective strategies for improving mental health. Journaling helps individuals process their emotions, gain self-awareness, and manage stress, while connecting with others fosters support, reduces feelings of isolation, and strengthens relationships, all of which contribute positively to mental well-being. These elements formed the foundation of our project, emphasizing the value of prioritizing mental well-being in both personal and professional spaces.
 
 # Features
 ### Overview
 Root & Reach is a holistic web application designed to support student mental health, activism, and advocacy. Our mission is simple: "Help yourself, help others."
 
 # Login Screen
-- Developed a JavaScript, React, and CSS web application with a nostalgic Windows XP-inspired design using a specialized styling library, intended to invoke a sense of home and nostalgia.
-
 ![Screenshot 2025-01-28 115408](https://github.com/user-attachments/assets/64cdbae0-9678-4090-a0c8-e91f4f743453)
+
+- Developed a JavaScript, React, and CSS web application with a nostalgic Windows XP-inspired design using a specialized styling library, intended to invoke a sense of home and nostalgia.
 
 ![Screenshot 2025-01-28 115417](https://github.com/user-attachments/assets/0cbf2749-5742-4dd9-b084-bd16bca14414)
 
@@ -32,13 +32,15 @@ Root & Reach is a holistic web application designed to support student mental he
 - Integrated React Router DOM for seamless navigation and intuitive user experience.
 - Connected to multiple APIs, including a daily quote generator, to deliver dynamic and engaging content.
 
-# Collecting Initial Data
-![Screenshot 2024-12-04 124851](https://github.com/user-attachments/assets/2cef139c-e353-411d-9b42-5ff9197b72a8)
-- Users are prompted to enter their game's name and what console they want to find similar games on.
-# What Sorting Algorithm and Search Criteria To Use
-![Screenshot 2024-12-04 124858](https://github.com/user-attachments/assets/5b84454e-2c40-4b5b-9b7b-5d968f7ce8f3)
+# Gauging User Emotion
+![Screenshot 2025-01-28 115435](https://github.com/user-attachments/assets/9c3d9918-07a8-43b4-896b-0830c11d0fad)
 
-- Users are prompted to choose a sorting algorithm as well as what search criteria to sort the games by.
+- Users are prompted to reflect on and gauge their feelings for the day, emphasizing that acknowledging one’s current well-being is a vital first step toward mental health improvement.
+
+# Home Screen
+![Screenshot 2025-01-28 115505](https://github.com/user-attachments/assets/739f3569-a986-4b13-9cc7-51d4de3de71e)
+
+- Users are directed to a home screen designed to resemble a Windows XP desktop bulletin board, combining nostalgia with functionality to create an engaging user experience.
 
 # How The Results Are Collected
 - The C++ code initially takes in the game's name, finds that game, then filters out all game's in the dataset that don't have that game's same genre.
