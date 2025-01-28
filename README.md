@@ -18,7 +18,7 @@ This project was created within 24 hours during the SwampHacks X hackathon, unde
 ### Overview
 Root & Reach is a holistic web application designed to support student mental health, activism, and advocacy. Our mission is simple: "Help yourself, help others."
 
-# Login Screen
+### Login Screen
 ![Screenshot 2025-01-28 115408](https://github.com/user-attachments/assets/64cdbae0-9678-4090-a0c8-e91f4f743453)
 
 - Developed a JavaScript, React, and CSS web application with a nostalgic Windows XP-inspired design using a specialized styling library, intended to invoke a sense of home and nostalgia.
@@ -30,23 +30,23 @@ Root & Reach is a holistic web application designed to support student mental he
 - Integrated React Router DOM for seamless navigation and intuitive user experience.
 - Connected to multiple APIs, including a daily quote generator, to deliver dynamic and engaging content.
 
-# Gauging User Emotion
+### Gauging User Emotion
 ![Screenshot 2025-01-28 115435](https://github.com/user-attachments/assets/9c3d9918-07a8-43b4-896b-0830c11d0fad)
 
 - Users are prompted to reflect on and gauge their feelings for the day, emphasizing that acknowledging one’s current well-being is a vital first step toward mental health improvement.
 
-# Home Screen
+### Home Screen
 ![Screenshot 2025-01-28 115505](https://github.com/user-attachments/assets/739f3569-a986-4b13-9cc7-51d4de3de71e)
 
 - Users are directed to a home screen designed to resemble a Windows XP desktop bulletin board, combining nostalgia with functionality to create an engaging user experience.
 - Users are greeted with a unique daily inspirational quote upon login, delivered through seamless integration with an external API.
 - Users are shown an MP4 video of dogs, leveraging research that watching animals can boost serotonin levels and enhance mood (who doesn't like dogs?).
 
-# Sticky Note For Journaling
+### Sticky Note For Journaling
 ![Screenshot 2025-01-28 114944](https://github.com/user-attachments/assets/5754fa0f-4887-45c4-a246-34654fd35bc1)
 - Users can log daily events and their associated feelings, fostering an introspective approach to understanding and processing their emotions.
 
-# Progress Calendar
+### Progress Calendar
 ![Screenshot 2025-01-28 114955](https://github.com/user-attachments/assets/76a31839-0ac4-44fd-8169-aa4d5b9f5bc6)
 - Users are able to access a calendar to visualize their progress and journal entries overtime.
 - This practice helps individuals set and achieve goals, stay organized, and create a sense of accomplishment as they visually see their progress. This can boost motivation, reduce stress, and enhance overall mental clarity, contributing positively to mental health and productivity.
@@ -55,7 +55,7 @@ Root & Reach is a holistic web application designed to support student mental he
 
 ![Screenshot 2025-01-28 115124](https://github.com/user-attachments/assets/036783d0-ed9d-4170-b037-e7c8dd5d8239)
 
-# Reach Out Reminder
+### Reach Out Reminder
 ![Screenshot 2025-01-28 115249](https://github.com/user-attachments/assets/c0f4304a-8322-4101-89e1-18a0c0d931e9)
 - Users are able to add reminders to the calendar to reach out to ones they're close with.
 - Acts of reaching out and fostering connections strengthen social bonds, reduce feelings of isolation, and promote emotional support. Additionally, helping or showing care for others can boost your own sense of purpose and happiness, thanks to the psychological benefits of altruism and community engagement.
@@ -63,7 +63,7 @@ Root & Reach is a holistic web application designed to support student mental he
 
 ![Screenshot 2025-01-28 115331](https://github.com/user-attachments/assets/02f67cd1-c325-4e19-be2b-5875ab5ec11e)
 
-# Reach Your Community
+### Reach Your Community
 ![Screenshot 2025-01-28 115139](https://github.com/user-attachments/assets/f56b27e7-d979-49b4-bfc2-d05ede82b57a)
 - This page provides direct access to UF's mental health and wellness groups, along with upcoming events such as yoga sessions and workshops, emphasizing the importance of fostering a sense of community to enhance overall well-being.
 
