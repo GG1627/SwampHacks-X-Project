@@ -68,7 +68,7 @@ Root & Reach is a holistic web application designed to support student mental he
 - This page provides direct access to UF's mental health and wellness groups, along with upcoming events such as yoga sessions and workshops, emphasizing the importance of fostering a sense of community to enhance overall well-being.
 
 # Key Takeaways
-Considering this was each contributor's first hackathon, we gained invaluable experience in planning, developing, and presenting a project under intense time constraints. Throughout the duration of the hackathon, we learned to adjust our scope, prioritizing key aspects of the project while scaling back on others to ensure we delivered a complete and functional product. Despite the challenges, we are proud of what we accomplished and are excited to further develop this project in the future.
+Considering this was each contributor's first hackathon, we gained invaluable experience in planning, developing, and presenting a project under intense time constraints. Throughout the duration of the hackathon, we learned to adjust our scope, prioritizing key aspects of the project while scaling back on others to ensure we delivered a complete and functional product. Despite the challenges, we are proud of what we accomplished and are excited to further develop this project in the future. This includes fully developing a back-end, as well as deploying the project for people to use.
 
 # Resources
 https://botoxparty.github.io/XP.css/
